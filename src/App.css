@@ -1,38 +1,49 @@
-.App {
+.container {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  padding: 2em;
+  color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.banner {
+  background-image: url("https://www.mightybytes.com/wp-content/uploads/2020/06/blog-wcag2-seriespost1-hero-3.png");
+  opacity: 0.8;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 15px;
+  text-align: right;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.sub-banner {
+  background-color: #02a38a;
+  width: 100%;
+  height: 5em;
+  margin: 1em auto;
+  padding-bottom: 2.4em;
+}
+p {
+  margin: 4em;
+}
+li {
+  list-style: none;
+  padding: 2em 1em;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-bar {
+  float: left;
+  width: 30%;
+  height: 50vh;
+  background-color: #02a38a;
+  padding-right: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search {
+  display: inline-block;
+
+  width: 30%;
+}
+#intro {
+  width: 60%;
+  order: 4;
+  float: right;
 }
