@@ -15,15 +15,7 @@ const Results = (props) => {
 
   return (
     <div className="results-text">
-      {/* {results.map((item, i) => {
-        return (
-          <li key={i}>
-            {item.fields.name.stringValue}
-            {item.fields.accScore.stringValue}
-          </li>
-        );
-      })} */}
-      <Display results={results} />
+      <Display results={results} wholeData={props.data} />
     </div>
   );
 };

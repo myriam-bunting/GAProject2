@@ -29,6 +29,7 @@ function Display(props) {
       console.log("less than 80");
     }
   };
+  // console.log({props.wholeData}) /// not proping correctly
 
   const yValues = props.results.map((data) => {
     console.log(data);
@@ -45,7 +46,8 @@ function Display(props) {
         }}
         options={[{ legend: { display: false } }]}
       />
-      <div className=" pageframe line chart">
+
+      <div className=" pageframe chart" id="doughnut">
         <Doughnut
           data={{
             labels: xValues,

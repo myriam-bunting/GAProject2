@@ -33,13 +33,19 @@ const Home = () => {
           As developers, we can keep accessibility design in mind right from the
           planning stages. Some simple ideas may be to:
           <br />
-          Keep content organised and flowing logically <br />
-          Using alternate text with images, using iframes, descriptive html
-          elements or buttons with text
-          <br />
-          Using aria functions, which are specifically designed with
-          accessibility in mind
-          <br />
+          <ul>
+            <li>Keep content organised and flowing logically</li>
+
+            <li>
+              Using alternate text with images, using iframes, descriptive html
+              elements or buttons with text
+            </li>
+
+            <li>
+              Using aria functions, which are specifically designed with
+              accessibility in mind
+            </li>
+          </ul>
           There are plenty of resources about how to make your apps more easy to
           use tools used for everyone. Check out some links in more Info to kick
           off your search

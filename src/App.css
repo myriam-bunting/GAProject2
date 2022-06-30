@@ -7,6 +7,7 @@
 }
 
 .header {
+  background-repeat: no-repeat;
   background-image: url("https://www.mightybytes.com/wp-content/uploads/2020/06/blog-wcag2-seriespost1-hero-3.png");
   opacity: 0.8;
   width: 100%;
@@ -24,7 +25,8 @@
 p {
   margin: 2em;
   line-height: 1.6;
-  text-align: center;
+  text-align: left;
+  width: 85%;
 }
 .navbar li {
   list-style: none;
@@ -90,6 +92,13 @@ p {
 #bar {
   padding-right: 70px;
 }
+#doughnut {
+  margin-top: 10px;
+  padding-left: 50px;
+  width: 50vw;
+  height: 40vh;
+}
+
 .links li {
   list-style: none;
   padding: 2em 1em;
