@@ -1,22 +1,14 @@
-import React, { useState, useRef } from "react";
-import Results from "./Results";
+import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Search = (props) => {
-  const [input, setInput] = useState("");
-
   const ref = useRef();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setInput(ref.current.value);
-    console.log(props.data);
-
-    const filteredData = props.data.filter((i) => {
-      return i.fields.type.stringValue === ref.current.value;
-    });
-    props.setResults(filteredData);
-
-    console.log(props.results); // nothing being returned from results
+    props.setInput(ref.current.value);
+    navigate("/results");
   };
   return (
     <div className="pageframe search">
@@ -26,12 +18,6 @@ const Search = (props) => {
         <input type="text" ref={ref}></input>
         <button type="submit">Search</button>
       </form>
-      <div>
-        {/* {props.results &&
-          props.results.map((item, i) => {
-            <li key={i}>item.fields.name.stringValue</li>;
-          })} */}
-      </div>
     </div>
   );
 };

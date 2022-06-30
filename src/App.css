@@ -6,7 +6,7 @@
   color: #ffffff;
 }
 
-.banner {
+.header {
   background-image: url("https://www.mightybytes.com/wp-content/uploads/2020/06/blog-wcag2-seriespost1-hero-3.png");
   opacity: 0.8;
   width: 100%;
@@ -14,7 +14,7 @@
   font-size: 15px;
   text-align: right;
 }
-.sub-banner {
+.sub-header {
   background-color: #02a38a;
   width: 100%;
   height: 5em;
@@ -42,6 +42,7 @@ p {
 }
 
 .search {
+  margin-top: 2em;
   display: inline-block;
   width: 30%;
 }
@@ -49,6 +50,7 @@ p {
   width: 60%;
   float: right;
   margin: 5px;
+  height: 80vh;
 }
 
 .navbar a {

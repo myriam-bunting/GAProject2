@@ -22,8 +22,8 @@ import Links from "./components/Links";
 
 function App() {
   const [data, setData] = useState([]);
-  const [results, setResults] = useState([]);
 
+  const [input, setInput] = useState("");
   const fetchData = async () => {
     const url =
       "https://firestore.googleapis.com/v1/projects/projecta11y/databases/(default)/documents/domains?pageSize=200";
@@ -38,8 +38,6 @@ function App() {
     fetchData();
   }, []);
 
-  console.log(results);
-
   return (
     <div className="container">
       {/* <Home /> */}
@@ -48,10 +46,10 @@ function App() {
 {/* <p>{data.length ? data[0].fields.name.stringValue : null}</p> */}
 
       {/* <Results results={results} /> */}
-      <div className="banner">
+      <div className="header">
         <h1 className="title">a11y</h1>
       </div>
-      <div className="sub-banner">
+      <div className="sub-header">
         <h2 className="title">Accessibility, where can we do better</h2>
       </div>
       <div>
@@ -61,8 +59,11 @@ function App() {
       <main>
         <Routes>
           <Route path="/home" element={<Home />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="/results" element={<Results />} />
+          <Route path="/search" element={<Search setInput={setInput} />} />
+          <Route
+            path="/results"
+            element={<Results input={input} data={data} />}
+          />
           <Route path="/links" element={<Links />} />
         </Routes>
       </main>

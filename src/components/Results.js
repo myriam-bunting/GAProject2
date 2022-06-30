@@ -1,15 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Results = (props) => {
+  const [results, setResults] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+
+  useEffect(() => {
+    const filteredData = props.data.filter((i) => {
+      return i.fields.type.stringValue === props.input;
+    });
+    setResults(filteredData);
+    console.log(props.data, props.input);
+    console.log(filteredData);
+  }, [props.data, props.input]);
+
   return (
     <div>
-      {/* {props.results} */}
-      {/* {props.results.map((i) => {
-        return i.fields.name.stringValue, i.fields.accScore.stringValue;
-      })} */}
+      {results.map((item, i) => {
+        return (
+          <li key={i}>
+            {item.fields.name.stringValue}
+            {item.fields.accScore.stringValue}
+          </li>
+        );
+      })}
     </div>
   );
 };
 
-//return level from the test to display
 export default Results;
