@@ -24,26 +24,51 @@
 p {
   margin: 4em;
 }
-li {
+.navbar li {
   list-style: none;
   padding: 2em 1em;
   color: white;
+  width: 100%;
+  height: 2em;
+  font-weight: bold;
+  border-bottom: #ffffff;
 }
-.nav-bar {
+.navbar {
   float: left;
   width: 30%;
-  height: 50vh;
+  height: 80vh;
   background-color: #02a38a;
-  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .search {
   display: inline-block;
-
   width: 30%;
 }
-#intro {
+.pageframe {
   width: 60%;
-  order: 4;
   float: right;
+  margin: 5px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.navbar a:hover,
+.navbar a:active,
+.navbar a.active {
+  color: rgb(62, 13, 13);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid whitesmoke;
+}
+
+#intro {
+  line-height: 1.6;
+}
+
+.icon > img {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
 }
