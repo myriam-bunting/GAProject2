@@ -40,12 +40,6 @@ function App() {
 
   return (
     <div className="container">
-      {/* <Home /> */}
-      {/* <Search data={data} results={results} setResults={setResults} />
-
-{/* <p>{data.length ? data[0].fields.name.stringValue : null}</p> */}
-
-      {/* <Results results={results} /> */}
       <div className="header">
         <h1 className="title">a11y</h1>
       </div>

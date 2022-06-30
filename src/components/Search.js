@@ -11,12 +11,20 @@ const Search = (props) => {
     navigate("/results");
   };
   return (
-    <div className="pageframe search">
+    <div className="pageframe search" aria-hidden="true">
       <form onSubmit={handleSubmit}>
         <label>Search website types</label>
         <br />
-        <input type="text" ref={ref}></input>
-        <button type="submit">Search</button>
+        <select className="select" type="text" ref={ref}>
+          <option value="social">social</option>
+          <option value="news">news</option>
+          <option value="blog">blog</option>
+          <option value="recipes">recipes</option>
+          <option value="sport">sport</option>
+        </select>
+        <button className="btn" type="submit">
+          Search
+        </button>
       </form>
     </div>
   );
