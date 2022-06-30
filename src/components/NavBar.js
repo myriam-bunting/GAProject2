@@ -16,6 +16,11 @@ function NavBar() {
               Some great accessibility apps
             </NavLink>
           </li>
+          <li>
+            <NavLink to="https://rapidapi.com/blog/make-tech-more-accessible-with-these-apis/">
+              Accessibility APIs
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </div>

@@ -1,96 +1,96 @@
 {
-wow : {
-date: "2015-09-07T22:03:02.741-05:00",
-result: {
-items: {
-forms: 1,
-iframes: 0,
-images: 43,
-links: 159,
-linksImage: 34,
-objects: 0,
-tables: 11,
-Total: 770
-},
-image: "http://observatorio.ups.edu.ec/oaw/...",
-level: "AAA",
-principles: [
-{
-number 1,
-title: "Perceivable",
-description: "Information and ...",
-guidelines: [
-{
-number: "1.1.",
-description: "Provide textual alternatives...",
-title: "Textual Alternatives",
-CriteriaCompliances: {
-number: "1.1.1.",
-level: "A",
-title: "Non-text content...",
-Successcriteria: [
-{
-code: "H24",
-criticality: "High",
-title: "Provide t...",
-incidents: 16,
-successes: 3,
-errors: 16,
-observation: "Of the 19 elements...",
-recommendation: "Must apply...",
-classification: "Error"
-},
-{
-code: "H35",
-criticality: "High",
-title: "Providing t...",
-incidences: 0,
-successes: 0,
-errors: 0,
-observation: "It is recommended to place ...",
-recommendation: "All app...",
-classification: "Warning"
-},
-/* Give more criteria that allow verifying the compliance criterion*/
-]
-},
-/* Give more guidelines...*/
-]
-},
-/* Of more principles ...*/
-],
-resolution: "1366x768",
-abstract: {
-understandable: {
-warnings: 5,
-errors: 3,
-successes: 5,
-not applicable: 0
-},
-operable: {
-caveats: 2,
-errors: 3,
-successes: 4,
-not applicable: 3
-},
-noticeable: {
-warnings: 17,
-errors: 11,
-successes: 6,
-not applicable: 4
-},
-robust: {
-caveats: 2,
-errors: 1,
-successes: 1,
-not applicable: 0
-},
-totalComprehensible: "76%",
-totalOperable: "66%",
-totalPerceivable: "67%",
-totalSturdy: "75%"
-},
-url: "http://domain.com/mypage.html"
-}
-}
-}
+    wow : {
+    date: "2015-09-07T22:03:02.741-05:00",
+    result: {
+    items: {
+    forms: 1,
+    iframes: 0,
+    images: 43,
+    links: 159,
+    linksImage: 34,
+    objects: 0,
+    tables: 11,
+    Total: 770
+    },
+    image: "http://observatorio.ups.edu.ec/oaw/...",
+    level: "AAA",
+    principles: [
+    {
+    number 1,
+    title: "Perceivable",
+    description: "Information and ...",
+    guidelines: [
+    {
+    number: "1.1.",
+    description: "Provide textual alternatives...",
+    title: "Textual Alternatives",
+    CriteriaCompliances: {
+    number: "1.1.1.",
+    level: "A",
+    title: "Non-text content...",
+    Successcriteria: [
+    {
+    code: "H24",
+    criticality: "High",
+    title: "Provide t...",
+    incidents: 16,
+    successes: 3,
+    errors: 16,
+    observation: "Of the 19 elements...",
+    recommendation: "Must apply...",
+    classification: "Error"
+    },
+    {
+    code: "H35",
+    criticality: "High",
+    title: "Providing t...",
+    incidences: 0,
+    successes: 0,
+    errors: 0,
+    observation: "It is recommended to place ...",
+    recommendation: "All app...",
+    classification: "Warning"
+    },
+    /* Give more criteria that allow verifying the compliance criterion*/
+    ]
+    },
+    /* Give more guidelines...*/
+    ]
+    },
+    /* Of more principles ...*/
+    ],
+    resolution: "1366x768",
+    abstract: {
+    understandable: {
+    warnings: 5,
+    errors: 3,
+    successes: 5,
+    not applicable: 0
+    },
+    operable: {
+    caveats: 2,
+    errors: 3,
+    successes: 4,
+    not applicable: 3
+    },
+    noticeable: {
+    warnings: 17,
+    errors: 11,
+    successes: 6,
+    not applicable: 4
+    },
+    robust: {
+    caveats: 2,
+    errors: 1,
+    successes: 1,
+    not applicable: 0
+    },
+    totalComprehensible: "76%",
+    totalOperable: "66%",
+    totalPerceivable: "67%",
+    totalSturdy: "75%"
+    },
+    url: "http://domain.com/mypage.html"
+    }
+    }
+    }

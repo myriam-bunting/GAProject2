@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import Results from "./Results";
 
 const Search = (props) => {
   const [input, setInput] = useState("");
@@ -8,14 +9,15 @@ const Search = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setInput(ref.current.value);
+    console.log(props.data);
     const filteredData = props.data.filter((i) => {
-      // console.log(i.fields.type.stringValue === ref.current.value);
-      return i.fields.type.stringValue == ref.current.value;
+      console.log(i.fields.type.stringValue, ref.current.value);
+      return i.fields.type.stringValue === ref.current.value;
     });
-    console.log(filteredData);
-    props.setResults(filteredData); //urls contained in results
-  };
+    props.setResults(filteredData);
 
+    console.log(filteredData); //urls contained in results
+  }; //search only returning 4 items. 4th item is a pointer
   return (
     <div className="search">
       <form onSubmit={handleSubmit}>
