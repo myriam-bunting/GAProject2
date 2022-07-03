@@ -50,6 +50,11 @@ function Links() {
             Notes on Colour Schemes
           </a>
         </li>
+        <li>
+          <a href="hhttps://achecker.ca/projects-and-tools/" aria-hidden="true">
+            Project ideas enhancing inclusivity
+          </a>
+        </li>
       </ul>
     </div>
   );

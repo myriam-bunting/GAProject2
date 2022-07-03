@@ -118,18 +118,3 @@ p {
 button {
   margin: 10px;
 }
-
-/* .navbar nav {
-  position: fixed;
-  top: 7%;
-  left: -150px;
-  width: 150px;
-  -moz-transition: all 200ms ease-in;
-  -webkit-transition: all 200ms ease-in;
-  -o-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
-}
-
-.open .navbar nav {
-  transform: 5em;
-} */

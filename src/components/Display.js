@@ -16,7 +16,8 @@ function Display(props) {
   const xValues = props.results.map((data) => {
     return data.fields.name.stringValue;
   });
-  // console.log(props.results);
+  console.log(props.data);
+
   const accScoreCheck = (data) => {
     if (data.fields.accScore.stringValue >= "90") {
       // setColor("#ef3935");
@@ -29,7 +30,6 @@ function Display(props) {
       console.log("less than 80");
     }
   };
-  // console.log({props.wholeData}) /// not proping correctly
 
   const yValues = props.results.map((data) => {
     console.log(data);
@@ -44,7 +44,7 @@ function Display(props) {
           labels: xValues,
           datasets: [{ backgroundColor: barColors, data: yValues }],
         }}
-        options={[{ legend: { display: false } }]}
+        options={{ legend: { display: false } }}
       />
 
       <div className=" pageframe chart" id="doughnut">
