@@ -1,4 +1,4 @@
-## allyCan
+## a11yCan
 
 ## Description
 
