@@ -9,13 +9,13 @@ This project evolved from a reading about accessibility and learning about the a
 ### Technical Used
 
 - React App
-- Ajax (axios) for API
+- Ajax for API
 - Cloud Firestore database
 - Google lighthouse data from webpages ( generates accessibility score from 0-100)
 
 ### Wireframes
 
-THe design of data flows from the App component in the following way:
+The design of data flows from the App component in the following way:
 [a11yCan - Flowchart.pdf](https://github.com/SEI2-jeddah/README-Template/files/9034994/a11yCan.-.Flowchart.pdf)
 
 Final product visual
